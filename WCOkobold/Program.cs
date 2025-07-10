@@ -46,7 +46,6 @@ try
     var htmlEpisodeListElements = htmlEpisodeList.ChildNodes;
 
     // Builds a dictionary of URL-Title pairs, to be iterated over when downloading episodes.
-    
     foreach (var htmlEpisodeElement in htmlEpisodeListElements)
     {
         var htmlEpisodeElementWrapper = htmlEpisodeElement.FirstChild;
@@ -66,6 +65,8 @@ catch (Exception ex)
 {
     Console.WriteLine(ex.Message);
 }
+
+// TODO clean up the download filenames before/after download - that 
 
 // TODO iterate over array. Async/Await all downloads.
 
